@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { IoCall } from "react-icons/io5";
 import { GrMail } from "react-icons/gr";
 import emailjs from "@emailjs/browser";
+import toast, { Toaster } from "react-hot-toast";
 
 const ContactUs = () => {
   const phoneRegExp = /^[6-9]\d{9}$/;
@@ -43,6 +44,8 @@ const ContactUs = () => {
           .then(
             (result) => {
               console.log(result.text);
+              toast.success("Email sent successfully !");
+              formik.resetForm();
             },
             (error) => {
               console.log(error.text);
@@ -52,8 +55,6 @@ const ContactUs = () => {
       sendEmail();
     },
   });
-
-  // console.log(formik.values);
 
   return (
     <motion.div
@@ -83,8 +84,9 @@ const ContactUs = () => {
         <div className="mt-5 contactMap">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.968483417908!2d77.31424127457156!3d28.600722285526164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce57c71571c7b%3A0x2a082d8a351f4ea8!2sM.%20P.%20MIDDLE%20SCHOOL!5e0!3m2!1sen!2sin!4v1699434637550!5m2!1sen!2sin"
-            width="400"
-            height="250"
+            // width="400"
+            // height="250"
+            className="w-[90%] h-full mx-auto"
             style={{ border: "0" }}
             allowFullScreen=""
             loading="lazy"
@@ -194,6 +196,7 @@ const ContactUs = () => {
               Submit
             </button>
           </div>
+          <Toaster position="top-right" duration={9000} />
         </form>
       </div>
     </motion.div>

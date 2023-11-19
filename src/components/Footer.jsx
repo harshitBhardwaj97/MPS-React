@@ -1,7 +1,7 @@
 import React from "react";
 import { IoCall } from "react-icons/io5";
 import { GrMail } from "react-icons/gr";
-import { AiFillYoutube, AiFillFacebook } from "react-icons/ai";
+import { AiFillYoutube, AiFillFacebook, AiFillInstagram } from "react-icons/ai";
 
 const Footer = () => {
   return (
@@ -47,6 +47,15 @@ const Footer = () => {
                   target="_blank"
                 >
                   Facebook
+                </a>
+              </div>
+              <div className="flex items-center justify-center gap-2 duration-150 ease-in-out cursor-pointer footerContentItem hover:scale-105 hover:text-[#c75d97]">
+                <AiFillInstagram size={20} />{" "}
+                <a
+                  href="https://instagram.com/mamtapublicschool90?igshid=OGQ5ZDc2ODk2ZA=="
+                  target="_blank"
+                >
+                  Instagram
                 </a>
               </div>
             </div>

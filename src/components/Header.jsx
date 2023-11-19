@@ -2,6 +2,7 @@ import { React, useState } from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import tw from "twin.macro";
+import { motion } from "framer-motion";
 
 const Header = () => {
   const Header = tw.header`
@@ -44,7 +45,10 @@ const Header = () => {
           </div>
         </Link>
       </div>
-      <div
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1, transition: { duration: 0.25 } }}
+        exit={{ opacity: 0, transition: { duration: 0.25 } }}
         className="relative block text-2xl transition-all duration-200 ease-linear cursor-pointer mobile-menu md:hidden"
         onClick={() => {
           setMobileNav(!mobileNav);
@@ -52,7 +56,7 @@ const Header = () => {
       >
         <AiOutlineMenu size={40} />
         {mobileNav && (
-          <div className="fixed right-0 top-0 h-screen w-[50%] p-3 bg-blue-500 z-40 text-white ">
+          <div className="fixed right-0 top-0 h-screen w-[50%] p-3 bg-blue-500 z-40 text-white text-lg ">
             <div className="closeIcon">
               <AiOutlineClose
                 size={40}
@@ -85,7 +89,7 @@ const Header = () => {
             </div>
           </div>
         )}
-      </div>
+      </motion.div>
     </Header>
   );
 };

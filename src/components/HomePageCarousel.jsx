@@ -7,25 +7,25 @@ export const HomePageCarousel = () => {
 
   const sliderImages = [
     {
-      url: "/s_1.jpg",
+      url: "./s_1.jpg",
       alt: "slider1",
     },
     {
-      url: "/s_2.jpg",
+      url: "./s_2.jpg",
       alt: "slider2",
     },
     {
-      url: "/s_3.jpg",
+      url: "./s_3.jpg",
       alt: "slider3",
     },
     {
-      url: "/s_4.jpg",
+      url: "./s_4.jpg",
       alt: "slider4",
     },
-    {
-      url: "/s_5.jpg",
-      alt: "slider5",
-    },
+    // {
+    //   url: "./s_5.jpg",
+    //   alt: "slider5",
+    // },
   ];
 
   useEffect(() => {
