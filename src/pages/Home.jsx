@@ -1,4 +1,3 @@
-import React from "react";
 import AboutSection from "../components/AboutSection";
 import HomePageCarousel from "../components/HomePageCarousel";
 import { motion } from "framer-motion";
