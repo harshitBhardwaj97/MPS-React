@@ -19,7 +19,7 @@ const AboutSection = () => {
           About Mamta Public School
         </motion.div>
         <motion.div
-          className="aboutContent border-b-[1px] border-gray-500 pb-3 text-sm md:text-lg"
+          className="aboutContent border-b-[1px] border-gray-500 pb-3 text-sm md:text-lg italic"
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ ease: "easeOut", duration: 1 }}
@@ -30,7 +30,7 @@ const AboutSection = () => {
           endeavour to build and restore self esteem and help pupils discover
           their strengths and potentials. The goal of all of this is to turn the
           students into a self-reliant individual with the attributes of a
-          global citizen.
+          global citizen.
         </motion.div>
         <div className="aboutBottom">
           <div className="items-center justify-between block mb-2 text-center md:flex">
@@ -44,18 +44,18 @@ const AboutSection = () => {
               <div className="text-lg font-bold md:text-xl aboutBoxHeading">
                 Vision and Mission
               </div>
-              <div className="text-sm aboutBoxContent md:text-lg">
+              <div className="text-sm italic aboutBoxContent md:text-lg">
                 Our focus is to impart sound education with knowledge to
                 inculcate the habit of co-operation,discipline, self confidence,
                 regularity and punctuality, so as to train our students to
                 become dutiful and valuable citizens of motherland. Our object
                 is to discover and develop respect for Indian culture through
-                the development of 3Hs: Head, Heart and Hand.
+                the development of 3Hs: Head, Heart and Hand.
               </div>
             </motion.div>
           </div>
           <Link to="about-us">
-            <div className="aboutButton border-[1px] w-[30%] mx-auto border-black text-center rounded-full hover:bg-red-700 hover:text-white hover:scale-105 ease-linear duration-150 px-2 py-4 text-sm md:text-lg">
+            <div className="aboutButton border-[1px] w-[30%] mx-auto border-black text-center rounded-full hover:bg-blue-900 hover:text-white/70 hover:scale-105 ease-linear duration-150 px-2 py-4 text-sm md:text-lg">
               Discover More About Us
             </div>
           </Link>

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 
@@ -22,10 +22,6 @@ export const HomePageCarousel = () => {
       url: "./s_4.jpg",
       alt: "slider4",
     },
-    // {
-    //   url: "./s_5.jpg",
-    //   alt: "slider5",
-    // },
   ];
 
   useEffect(() => {

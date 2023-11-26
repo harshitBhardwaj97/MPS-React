@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .mdMenuItem {
+    @apply ease-linear cursor-pointer hover:text-red-600 hover:scale-105 duration-200 md:text-xl text-lg;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
