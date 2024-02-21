@@ -6,6 +6,27 @@
   .mdMenuItem {
     @apply ease-linear cursor-pointer hover:text-red-600 hover:scale-105 duration-200 md:text-xl text-lg;
   }
+
+  .marqueeLink {
+    color: black/70;
+    background: linear-gradient(
+      90deg,
+      violet,
+      indigo,
+      blue,
+      green,
+      orange,
+      red
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  .marqueeLink:hover {
+    color: transparent;
+    transition: 250ms ease;
+    @apply underline;
+  }
 }
 
 * {

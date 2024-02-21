@@ -10,6 +10,11 @@ const ChairmanDesk = () => {
           />
         </div>
         <div className="flex-1 text-[14px] md:text-xl content p-2">
+          <p className="italic cursor-pointer">
+            <span className="transition-all duration-100 ease-in-out hover:border-b-[1px] hover:border-black">
+              Blessings from Our Founder Chairman Sir
+            </span>
+          </p>
           Our dedicated staff takes a very real interest in all children and are
           committed to each child's future success by providing challenging
           programs that promote individual growth and achievement leadership
