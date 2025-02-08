@@ -61,7 +61,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footerBottom w-[70%] mx-auto text-center text-sm md:text-lg">
-          © 2023 Mamta Public School. All rights reserved.
+          © 2025 Mamta Public School. All rights reserved.
         </div>
       </footer>
     </>

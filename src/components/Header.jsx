@@ -152,9 +152,6 @@ const Header = () => {
         <Link to="gallery">
           <div className="mdMenuItem">Gallery</div>
         </Link>
-        <Link to="https://educoresystems.in" target={"_blank"}>
-          <div className="mdMenuItem">ERP Login</div>
-        </Link>
       </div>
       <motion.div
         initial={{ opacity: 0 }}
@@ -201,11 +198,6 @@ const Header = () => {
               <Link to="gallery">
                 <div className="transition-all duration-200 border-b-2 border-gray-300 cursor-pointer menuItem hover:text-yellow-400 hover:scale-105">
                   Gallery
-                </div>
-              </Link>
-              <Link to="https://educoresystems.in" target={"_blank"}>
-                <div className="transition-all duration-200 border-b-2 border-gray-300 cursor-pointer menuItem hover:text-yellow-400 hover:scale-105">
-                  ERP Login
                 </div>
               </Link>
             </div>
