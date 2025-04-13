@@ -3,51 +3,84 @@
 @tailwind utilities;
 
 @layer components {
-  .mdMenuItem {
-    @apply ease-linear cursor-pointer hover:text-red-600 hover:scale-105 duration-200 md:text-xl text-lg;
-  }
+    .mdMenuItem {
+        @apply ease-linear cursor-pointer hover:text-purple-600 hover:scale-105 duration-200 md:text-xl text-lg;
+    }
 
-  .marqueeLink {
-    color: black/70;
-    background: linear-gradient(
-      90deg,
-      violet,
-      indigo,
-      blue,
-      green,
-      orange,
-      red
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-  }
+    .marqueeLink {
+        color: #9b7fa5; /* Muted purple text */
+        background: linear-gradient(90deg, #9b7fa5, #d9b3e6, #e6d0f4);
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
 
-  .marqueeLink:hover {
-    color: transparent;
-    transition: 250ms ease;
-    @apply underline;
-  }
+    .marqueeLink:hover {
+        color: transparent;
+        transition: 250ms ease;
+        @apply underline;
+    }
 }
 
+/* Resetting global styles */
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e6d0f4;
+    color: #333;
+}
+
+body {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: theme(colors.purpleDark);
+}
+
+footer {
+    background-color: theme(colors.purpleDark);
+    color: #e2e8f0;
+}
+
+
+footer a {
+    text-decoration: none;
+    color: #b49dbe;
+}
+
+footer a:hover {
+    color: #f4e6ff;
+}
+
+/* Tailwind utility classes */
+@layer utilities {
+    .bg-light-lavender {
+        background-color: #e6d0f4;
+    }
+
+    .text-muted {
+        color: #718096;
+    }
 }
 
 .embla {
-  overflow: "hidden";
+    overflow: "hidden";
 }
 
 .embla__container {
-  display: flex;
+    display: flex;
 }
 
 .embla__slide {
-  flex: 0 0 100%;
-  min-width: 100%;
+    flex: 0 0 100%;
+    min-width: 100%;
 }
